@@ -68,7 +68,6 @@ body {
   margin: 1em;
   width: 10em;
   overflow: hidden;
-  padding: 3em;
   position: relative;
   background: #382F2B;
   border: none;
@@ -83,11 +82,20 @@ body {
   line-height: 2;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .btn:after {
   position: absolute;
   z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn:before {
@@ -95,6 +103,9 @@ body {
   top: -100%;
   height: 100%;
   width: 100%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn:hover:before {
@@ -105,4 +116,17 @@ body {
 
 .btn span {
   display: inline-block;
+  -webkit-transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  -moz-transition: all 0.3s;
+  -moz-backface-visibility: hidden;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.btn:hover span {
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
 }
