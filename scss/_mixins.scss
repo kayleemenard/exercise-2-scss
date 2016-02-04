@@ -22,6 +22,7 @@
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden; 
@@ -56,12 +57,14 @@
 		display: inline-block;
 
 		-webkit-transition: all 0.3s;
-		-webkit-backface-visibility: hidden;
 		-moz-transition: all 0.3s;
-		-moz-backface-visibility: hidden;
 		transition: all 0.3s;
+
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
 		backface-visibility: hidden;
 	}
+	
 	&:hover span {		
 		-webkit-transform: translateY(300%);
 		-moz-transform: translateY(300%);

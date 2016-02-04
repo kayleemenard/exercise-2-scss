@@ -117,10 +117,10 @@ body {
 .btn span {
   display: inline-block;
   -webkit-transition: all 0.3s;
-  -webkit-backface-visibility: hidden;
   -moz-transition: all 0.3s;
-  -moz-backface-visibility: hidden;
   transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
