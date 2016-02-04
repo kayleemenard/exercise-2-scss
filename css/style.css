@@ -58,7 +58,7 @@ body {
   text-transform: uppercase;
 }
 
-.container p {
+.container div {
   margin: 0 auto;
   text-align: center;
 }
@@ -68,6 +68,7 @@ body {
   margin: 1em;
   width: 10em;
   overflow: hidden;
+  padding: 3em;
   position: relative;
   background: #382F2B;
   border: none;
@@ -80,7 +81,14 @@ body {
   font-size: 1em;
   letter-spacing: 2px;
   line-height: 2;
+  text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .btn :after {

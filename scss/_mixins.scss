@@ -3,6 +3,7 @@
 	margin: 1em;
 	width: 10em;
 	overflow: hidden;
+	padding: 3em;
 	position: relative;
 
 	background: $bg-color;
@@ -16,6 +17,7 @@
 	font-size: $medium;
 	letter-spacing: 2px;
 	line-height: 2;
+	text-decoration: none;
 	text-transform: uppercase;
 
 	:after {

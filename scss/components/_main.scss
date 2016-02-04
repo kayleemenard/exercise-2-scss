@@ -16,7 +16,7 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
@@ -40,7 +40,7 @@ body {
 			text-transform: uppercase;
 		}
 	}
-	p {
+	div {
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -48,4 +48,11 @@ body {
 
 .btn {
 	@include button($brown);
+
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
