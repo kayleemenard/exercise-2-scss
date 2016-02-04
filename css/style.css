@@ -1,5 +1,39 @@
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-o-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+
 html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   font-family: "Gill Sans";
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -43,16 +77,10 @@ body {
   display: inline-block;
   font-family: "Gill Sans";
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 1em;
   letter-spacing: 2px;
   line-height: 2;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .btn :after {
